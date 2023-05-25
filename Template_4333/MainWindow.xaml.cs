@@ -61,7 +61,6 @@ namespace Template_4333
         {
             _4333_Ibragimov ibragimov = new _4333_Ibragimov();
             ibragimov.Show();
-            this.Hide();
         }
     }
 }

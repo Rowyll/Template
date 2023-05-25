@@ -6,7 +6,9 @@
         xmlns:local="clr-namespace:Template_4333"
         mc:Ignorable="d"
         Title="_4333_Ibragimov" Height="450" Width="800">
-    <Grid>
+    <StackPanel Orientation="Horizontal" VerticalAlignment="Top">
         <Label Content="Ибрагимов 4333 18 лет" />
-    </Grid>
+        <Button Content="Импорт данных" Height="20" Margin="5" Click="Button_Click" />
+        <Button Content="Экспорт в Excel" Height="20" Margin="5" Click="Button_Click_1" />
+    </StackPanel>
 </Window>
