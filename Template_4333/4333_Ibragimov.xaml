@@ -7,8 +7,10 @@
         mc:Ignorable="d"
         Title="_4333_Ibragimov" Height="450" Width="800">
     <StackPanel Orientation="Horizontal" VerticalAlignment="Top">
-        <Label Content="Ибрагимов 4333 18 лет" />
+        <Label Content="Ибрагимов 4333 19 лет" />
         <Button Content="Импорт данных" Height="20" Margin="5" Click="Button_Click" />
         <Button Content="Экспорт в Excel" Height="20" Margin="5" Click="Button_Click_1" />
+        <Button Content="Импорт JSON данных" Height="20" Margin="5" Click="Button_Click_2" />
+        <Button Content="Экспорт в Word" Height="20" Margin="5" Click="Button_Click_3" />
     </StackPanel>
 </Window>

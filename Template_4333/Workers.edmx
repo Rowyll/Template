@@ -7,10 +7,11 @@
       <Schema Namespace="Хранилище isrpoModel" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
         <EntityType Name="Workers">
           <Key>
-            <PropertyRef Name="FIO" />
+            <PropertyRef Name="Id" />
           </Key>
+          <Property Name="Id" Type="int" Nullable="false" />
           <Property Name="RoleName" Type="nvarchar" MaxLength="100" Nullable="false" />
-          <Property Name="FIO" Type="nvarchar" MaxLength="300" Nullable="false" />
+          <Property Name="FIO" Type="nvarchar" MaxLength="300" />
           <Property Name="LoginName" Type="nvarchar" MaxLength="100" Nullable="false" />
           <Property Name="PasswordName" Type="nvarchar" MaxLength="100" Nullable="false" />
         </EntityType>
@@ -24,10 +25,11 @@
       <Schema Namespace="isrpoModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
         <EntityType Name="Workers">
           <Key>
-            <PropertyRef Name="FIO" />
+            <PropertyRef Name="Id" />
           </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" />
           <Property Name="RoleName" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
-          <Property Name="FIO" Type="String" MaxLength="300" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="FIO" Type="String" MaxLength="300" FixedLength="false" Unicode="true" />
           <Property Name="LoginName" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
           <Property Name="PasswordName" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
         </EntityType>
@@ -43,6 +45,7 @@
           <EntitySetMapping Name="Workers">
             <EntityTypeMapping TypeName="isrpoModel.Workers">
               <MappingFragment StoreEntitySet="Workers">
+                <ScalarProperty Name="Id" ColumnName="Id" />
                 <ScalarProperty Name="RoleName" ColumnName="RoleName" />
                 <ScalarProperty Name="FIO" ColumnName="FIO" />
                 <ScalarProperty Name="LoginName" ColumnName="LoginName" />

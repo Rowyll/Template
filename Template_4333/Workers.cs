@@ -14,6 +14,7 @@ namespace Template_4333
     
     public partial class Workers
     {
+        public int Id { get; set; }
         public string RoleName { get; set; }
         public string FIO { get; set; }
         public string LoginName { get; set; }
